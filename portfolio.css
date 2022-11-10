@@ -362,7 +362,11 @@ img.spin {
     .github-repo-list {
         display: flex;
         justify-content: space-between;
-        padding: 2 10rem;
+    }
+
+    .left-side-repos,
+    .right-side-repos {
+        align-self: flex-start;
     }
 
     .right-repo-ul,
@@ -370,15 +374,43 @@ img.spin {
         list-style: none;
         color: white;
         font-size: 1.3rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        gap: 1rem;
     }
 
     .right-repo-ul>li,
     .left-repo-ul>li {
-        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.305);
     }
 
     .middle-container {
-        align-self: flex-start;
+        align-self: center;
+    }
+
+    .github-link {
+        font-size: 0.7rem;
+        color: rgb(79, 87, 205);
+
+        background: white;
+        text-decoration: none;
+        padding: 0.1rem 0.5rem;
+        border-radius: 1rem;
+    }
+
+    .left-repo-ul>li>p,
+    .right-repo-ul>li>p {
+        font-size: .8rem;
+        color: #c0c0c0;
+        max-width: 10rem;
+        text-align: center;
     }
 
 }

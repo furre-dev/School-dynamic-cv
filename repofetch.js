@@ -21,8 +21,16 @@ async function fetchApi() {
             return;
         }
 
-        if (leftLi.length >= rightLi.length) {
-            leftUl.innerHTML += `<li class="left-li">${obj.name}</li>`
+        if (leftLi.length > rightLi.length) {
+            rightUl.innerHTML += `<li class="right-li">${obj.name}<br>
+            <p class"github-description">${obj.description}</p><br>
+            <a href="${obj.html_url}" class="github-link">Click to get to the github repo!<a/></li>`
+            console.log(obj.name)
+            console.log(obj.html_url)
+        } else {
+            leftUl.innerHTML += `<li class="left-li">${obj.name}<br>
+            <p class"github-description">${obj.description}</p><br>
+            <a href="${obj.html_url}" class="github-link">Click to get to the github repo!<a/></li>`
             console.log(obj.name)
             console.log(obj.html_url)
         }
