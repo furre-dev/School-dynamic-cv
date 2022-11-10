@@ -14,11 +14,18 @@ async function getJson() {
 
 
     workData.forEach(element => {
+        console.log(element.name)
+        xpList.innerHTML += `<li>${element.name}<br>
+        ${element.position}<br>
+        ${element.startYear}-${element.endYear}</li>`;
+    });
+
+    studiesData.forEach(element => {
+        console.log(element.name);
         studiesList.innerHTML += `<li>${element.name}<br>
         ${element.studyName}<br>
         ${element.startYear}-${element.endYear}</li>`
-    });
-
+    })
     /* for (let i = 0; i < studiesData.length; i++) {
         console.log(studiesData[i]);
         studiesList.innerHTML += `<li>${studiesData[i].name}<br>
