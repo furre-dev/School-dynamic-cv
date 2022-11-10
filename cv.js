@@ -26,18 +26,6 @@ async function getJson() {
         ${element.studyName}<br>
         ${element.startYear}-${element.endYear}</li>`
     })
-    /* for (let i = 0; i < studiesData.length; i++) {
-        console.log(studiesData[i]);
-        studiesList.innerHTML += `<li>${studiesData[i].name}<br>
-        ${studiesData[i].studyName}<br>
-        ${studiesData[i].startYear}-${studiesData[i].endYear}</li>`
-    }
-
-    for (let i = 0; i < workData.length; i++) {
-        console.log(workData[i]);
-        xpList.innerHTML += `<li>${workData[i].name} - ${workData[i].position}<br>
-        ${workData[i].startYear}-${workData[i].endYear}</li>`
-    } */
 
 }
 getJson();  

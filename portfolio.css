@@ -354,4 +354,31 @@ img.spin {
     #second-article .article-text p {
         text-align: right;
     }
+
+    #fifth-article {
+        text-align: center;
+    }
+
+    .github-repo-list {
+        display: flex;
+        justify-content: space-between;
+        padding: 2 10rem;
+    }
+
+    .right-repo-ul,
+    .left-repo-ul {
+        list-style: none;
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    .right-repo-ul>li,
+    .left-repo-ul>li {
+        padding-bottom: 2rem;
+    }
+
+    .middle-container {
+        align-self: flex-start;
+    }
+
 }
