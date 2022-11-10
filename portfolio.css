@@ -331,6 +331,7 @@ img.spin {
         justify-content: space-around;
         flex-direction: row;
         width: 80rem;
+        max-width: 100%;
     }
 
     .skills-line {
@@ -356,46 +357,56 @@ img.spin {
     }
 
     #fifth-article {
+        background: #2b43ac;
         text-align: center;
+        flex-direction: column;
+
+        gap: 3rem;
     }
 
-    .github-repo-list {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .left-side-repos,
-    .right-side-repos {
-        align-self: flex-start;
-    }
-
-    .right-repo-ul,
-    .left-repo-ul {
+    .repo-ul {
         list-style: none;
         color: white;
         font-size: 1.3rem;
 
         display: flex;
-        flex-direction: column;
-        align-items: space-between;
-        gap: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        gap: 2rem;
     }
 
-    .right-repo-ul>li,
-    .left-repo-ul>li {
+    .repo-ul>li {
+        box-sizing: content-box;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.305);
+        width: 15rem;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+        flex-grow: 1;
+
+        font-size: 2rem;
+
+        background: rgba(17, 176, 208, 0.207);
+
+        padding: 1rem;
+        border-radius: 1rem;
     }
 
-    .middle-container {
-        align-self: center;
+    .repo-ul>li>p {
+        font-size: .8rem;
+        color: #c0c0c0;
+        max-width: 10rem;
+        text-align: center;
     }
 
     .github-link {
+        position: absolute;
+        bottom: 1rem;
+
         font-size: 0.7rem;
         color: rgb(79, 87, 205);
 
@@ -403,14 +414,6 @@ img.spin {
         text-decoration: none;
         padding: 0.1rem 0.5rem;
         border-radius: 1rem;
-    }
-
-    .left-repo-ul>li>p,
-    .right-repo-ul>li>p {
-        font-size: .8rem;
-        color: #c0c0c0;
-        max-width: 10rem;
-        text-align: center;
     }
 
 }
