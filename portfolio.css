@@ -388,12 +388,12 @@ img.spin {
         padding-bottom: 2rem;
         flex-grow: 1;
 
-        font-size: 2rem;
+        font-size: 1.2rem;
 
-        background: rgba(17, 176, 208, 0.207);
+        background: rgba(145, 145, 145, 0.511);
 
         padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 2rem;
     }
 
     .repo-ul>li>p {
