@@ -54,6 +54,8 @@ body {
 
 .xp-list>* {
     margin-bottom: 1rem;
+
+    font-size: 1.2rem;
 }
 
 .left-side p,
@@ -158,6 +160,14 @@ body {
 
 #b-körkort {
     background-color: white;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: gray;
 }
 
 @media screen and (min-width:1024px) {
