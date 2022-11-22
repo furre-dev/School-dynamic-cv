@@ -142,10 +142,6 @@ body {
 
 
 
-
-
-
-
 #java {
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(96, 96, 96, 1) 50%);
 }
@@ -163,12 +159,63 @@ body {
 }
 
 .btn-wrapper {
+    box-sizing: border-box;
+    background: #FCD4A0;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #ad705f;
+
+    box-shadow: 0 0 10px black;
+    margin-top: 10rem;
+
+    cursor: pointer;
+}
+
+.modal-popup.closed {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.modal-popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.842);
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background: gray;
+    gap: 1rem;
 }
+
+.about-me {
+    background: rgb(223, 117, 117);
+
+    padding: 1rem;
+}
+
+.about-me>p {
+    color: white;
+}
+
+.modal-name {
+    color: rgb(0, 255, 200);
+}
+
+.closeModal {
+    color: #000000;
+    background: white;
+    padding: .5rem .7rem;
+    font-size: 1.5rem;
+
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
 
 @media screen and (min-width:1024px) {
     .wrapper {
